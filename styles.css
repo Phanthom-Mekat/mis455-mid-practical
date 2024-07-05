@@ -50,3 +50,35 @@ nav ul li a:hover {
 nav ul li a:hover::after {
     transform: scaleX(1);
 }
+
+.hero {
+    text-align: center;
+    padding: 3rem 0;
+    background: 
+                url('img1.jpeg');
+    background-position: center;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 27px rgba(11, 141, 197, 0.811);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+}
+.hero p {
+    visibility: hidden;
+    position: relative;
+    z-index: 1;
+}
+
