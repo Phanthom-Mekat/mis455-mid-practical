@@ -4,6 +4,8 @@ body {
     padding: 0;
     background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
     color: #fff;
+    /* name: Md. Jahidul Hossain Mekat
+    id: 2221395  */
 }
 header {
     background: linear-gradient(90deg, #00ffe1, #000000);
@@ -50,19 +52,21 @@ nav ul li a:hover {
 nav ul li a:hover::after {
     transform: scaleX(1);
 }
-
+main {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
 .hero {
-    text-align: center;
-    padding: 3rem 0;
+
     background: 
                 url('img1.jpeg');
     background-position: center;
     color: rgb(0, 0, 0);
     border-radius: 10px;
     margin-bottom: 2rem;
-    box-shadow: 0 10px 27px rgba(11, 141, 197, 0.811);
-    position: relative;
-    overflow: hidden;
+    box-shadow: 0 10px 27px rgba(149, 28, 151, 0.811);
+
 }
 
 .hero::before {
@@ -82,3 +86,49 @@ nav ul li a:hover::after {
     z-index: 1;
 }
 
+
+.featured-products {
+    
+    margin-bottom: 2rem;
+}
+
+.featured-products h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.product-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex-basis: calc(33.33% - 1rem);
+    background: linear-gradient(135deg, #162f14, #42b1d2, #7bb4ff);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(134, 27, 27, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+}
